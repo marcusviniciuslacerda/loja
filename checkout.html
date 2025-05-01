@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Elle Fitwear</title>
+    <link rel="stylesheet" href="css/style1.css">
+</head>
+<body>
+    <header>
+        <h1>Elle Fitwear</h1>
+        <button class="cart-icon" onclick="toggleCart()">🛒</button>
+    </header>
+
+    <section class="checkout">
+        <h2>Revisar Pedido</h2>
+        <div id="checkout-items">
+            <!-- Itens do carrinho vão aparecer aqui -->
+        </div>
+
+        <div class="checkout-summary">
+            <p>Total: R$ <span id="total-price">0,00</span></p>
+            <button onclick="checkout()">Finalizar Compra</button>
+        </div>
+    </section>
+
+    <section class="payment">
+        <h2>Pagamento</h2>
+        <p>Escaneie o QR Code abaixo para pagar via Pix:</p>
+        <img src="img/pix-qrcode.png" alt="QR Code Pix" style="width:100%;border-radius:10px;">
+        <a href="checkout.html">
+            <button>Finalizar Compra</button>
+        </a>
+    </section>
+
+    <script src="js/script1.js"></script>
+</body>
+</html>
